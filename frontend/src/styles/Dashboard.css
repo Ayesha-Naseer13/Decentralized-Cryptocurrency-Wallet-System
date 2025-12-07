@@ -1,0 +1,160 @@
+.dashboard {
+  width: 100%;
+}
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard h1 {
+  color: var(--primary);
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background: var(--surface);
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.card h3 {
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.balance-card .balance {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--secondary);
+  margin-bottom: 8px;
+}
+
+.zakat-card .zakat {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--warning);
+}
+
+.utxo-card .count {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--success);
+}
+
+.card small {
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+.utxo-list {
+  background: var(--surface);
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: var(--shadow);
+}
+
+.utxo-list h2 {
+  color: var(--primary);
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.utxo-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.utxo-table thead {
+  background-color: #f9f9f9;
+  border-bottom: 2px solid var(--border);
+}
+
+.utxo-table th {
+  padding: 12px;
+  text-align: left;
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.utxo-table td {
+  padding: 12px;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.utxo-id,
+.block-hash {
+  font-family: "Courier New", monospace;
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+.status {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status.unspent {
+  background-color: #e6f2ff;
+  color: var(--secondary);
+}
+
+.status.spent {
+  background-color: #f0f0f0;
+  color: var(--text-secondary);
+}
+
+.no-data {
+  text-align: center;
+  color: var(--text-secondary);
+  padding: 40px 20px;
+  font-size: 14px;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .utxo-table {
+    font-size: 12px;
+  }
+
+  .utxo-table th,
+  .utxo-table td {
+    padding: 8px;
+  }
+}

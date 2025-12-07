@@ -1,0 +1,110 @@
+.send-money {
+  width: 100%;
+}
+
+.send-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.send-container h1 {
+  color: var(--primary);
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+.send-form {
+  background: var(--surface);
+  border-radius: 8px;
+  padding: 32px;
+  box-shadow: var(--shadow);
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--secondary);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background-color: #0052a3;
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.message-box {
+  margin-top: 24px;
+  padding: 16px;
+  border-radius: 4px;
+  background-color: #e6f2ff;
+  color: var(--secondary);
+  border-left: 4px solid var(--secondary);
+}
+
+.message-box p {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.tx-hash {
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+  word-break: break-all;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(0, 102, 204, 0.3);
+}
+
+@media (max-width: 480px) {
+  .send-form {
+    padding: 20px;
+  }
+
+  .send-container h1 {
+    font-size: 24px;
+  }
+}

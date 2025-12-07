@@ -1,0 +1,155 @@
+.block-explorer {
+  width: 100%;
+}
+
+.explorer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.explorer-container h1 {
+  color: var(--primary);
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+.blocks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.block-card {
+  background: var(--surface);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+  border: 2px solid transparent;
+}
+
+.block-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--secondary);
+}
+
+.block-card h3 {
+  color: var(--primary);
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.block-card p {
+  color: var(--text-secondary);
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.hash,
+.block-hash {
+  font-family: "Courier New", monospace;
+  word-break: break-all;
+}
+
+.timestamp {
+  color: var(--secondary);
+  font-weight: 500;
+}
+
+.tx-count {
+  background-color: #f0f0f0;
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.block-detail {
+  background: var(--surface);
+  border-radius: 8px;
+  padding: 32px;
+  box-shadow: var(--shadow-lg);
+  margin-top: 40px;
+  border: 2px solid var(--secondary);
+}
+
+.block-detail h2 {
+  color: var(--primary);
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+.detail-content {
+  margin-bottom: 24px;
+}
+
+.detail-content p {
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.detail-content strong {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+code {
+  background-color: #f5f5f5;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+  color: var(--secondary);
+  word-break: break-all;
+}
+
+.detail-content h3 {
+  color: var(--primary);
+  margin-top: 20px;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.tx-detail {
+  background-color: #f9f9f9;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  border-left: 4px solid var(--accent);
+}
+
+.tx-detail p {
+  margin-bottom: 6px;
+  font-size: 13px;
+}
+
+.close-btn {
+  background-color: var(--border);
+  color: var(--text-primary);
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.close-btn:hover {
+  background-color: #d0d0d0;
+}
+
+@media (max-width: 768px) {
+  .blocks-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .block-detail {
+    padding: 20px;
+  }
+
+  .block-detail h2 {
+    font-size: 20px;
+  }
+}

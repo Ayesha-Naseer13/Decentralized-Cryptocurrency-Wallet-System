@@ -1,0 +1,121 @@
+.history {
+  width: 100%;
+}
+
+.history-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.history h1 {
+  color: var(--primary);
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+.history-table {
+  width: 100%;
+  background: var(--surface);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border-collapse: collapse;
+}
+
+.history-table thead {
+  background-color: var(--primary);
+  color: white;
+}
+
+.history-table th {
+  padding: 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.history-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.history-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.type {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.type.sent {
+  background-color: #ffe6e6;
+  color: var(--danger);
+}
+
+.type.received {
+  background-color: #e6ffe6;
+  color: var(--success);
+}
+
+.type.zakat_deduction {
+  background-color: #fff5e6;
+  color: var(--warning);
+}
+
+.status {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status.pending {
+  background-color: #fff5e6;
+  color: var(--warning);
+}
+
+.status.confirmed {
+  background-color: #e6f2ff;
+  color: var(--secondary);
+}
+
+.block-hash {
+  font-family: "Courier New", monospace;
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+.no-data {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-secondary);
+  background: var(--surface);
+  border-radius: 8px;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .history-table {
+    font-size: 12px;
+  }
+
+  .history-table th,
+  .history-table td {
+    padding: 10px 8px;
+  }
+}
