@@ -1,35 +1,6 @@
 # Decentralized Cryptocurrency Wallet System
 
 A complete blockchain-based cryptocurrency wallet application with React frontend and Rust backend, featuring UTXO model, Proof-of-Work mining, digital signatures, and automatic Zakat (2.5%) deduction.
-
-## Project Structure
-
-\`\`\`
-.
-├── frontend/          # React (JSX) frontend application
-│   ├── src/
-│   │   ├── components/    # UI components
-│   │   ├── pages/         # Page components
-│   │   ├── styles/        # CSS stylesheets
-│   │   ├── services/      # API services
-│   │   └── App.jsx        # Main app component
-│   ├── package.json
-│   └── index.html
-│
-└── backend/           # Rust Actix-web backend
-    ├── src/
-    │   ├── main.rs        # Application entry point
-    │   ├── models.rs      # Data models
-    │   ├── handlers/      # API route handlers
-    │   ├── blockchain.rs  # Blockchain logic
-    │   ├── crypto.rs      # Cryptographic functions
-    │   ├── db.rs          # Database operations
-    │   ├── error.rs       # Error handling
-    │   └── middleware.rs  # Middleware setup
-    ├── Cargo.toml
-    └── Cargo.lock
-\`\`\`
-
 ## Features
 
 ### Authentication
